@@ -34,6 +34,7 @@ public class CarShopStorageServiceTest {
 		 thrown.reportMissingExceptionWithMessage("We expect exception on negative price").expect(IllegalArgumentException.class);
 
 		service.addCarToStorage(new Car(Color.BLACK, CarTypes.AUDI, 2016, -1));
+
 	}
 
 	@Test
